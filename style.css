@@ -104,3 +104,11 @@ li:hover{
     padding-left: 12px;
     border-left: 4px solid #26495c;
 }
+
+#add-books input[type=checkbox] {
+    float: left;
+}
+
+#add-books label{
+    float: left;
+}
