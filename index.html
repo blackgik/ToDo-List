@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do list</title>
+</head>
+<body>
+    <div id="container">
+
+        <header>
+            <div id="page-banner">
+                <h3 class="title">My To-Do List</h3>
+                <p class="sub-title">list of mydaily task</p>
+
+                <form id="search-books">
+                    <center><input  type="text" placeholder="search books"></center>
+                </form>
+            </div>
+        </header>
+
+        <hr class="solid-divider">
+        
+        <div id="To-Do-list">
+            <h2 class="header">My Task</h2>
+            <ul class="remove-dot">
+                <li>
+                    <span class="name">wash plates</span>
+                    <span class="delete"> del</span>
+    
+                </li>
+                <li>
+                    <span class="name">Go to the office</span>
+                    <span class="delete"> del</span>
+    
+                </li>
+                <li>
+                    <span class="name">work on socket.io</span>
+                    <span class="delete"> del</span>
+                </li>
+                <li>
+                    <span class="name">put water in the refrigerator</span>
+                    <span class="delete"> del</span>
+    
+                </li>
+                <li>
+                    <span class="name">take the trash out</span>
+                    <span class="delete"> del </span>
+                </li>
+
+            </ul>
+        </div>
+
+        <div id="add-task-field">
+            <form>
+                <input type="text" placeholder="Enter Task">
+                <button id="add-task">+ add</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="dom.js"></script>
+</body>
+</html>
