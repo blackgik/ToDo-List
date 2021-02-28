@@ -1,8 +1,15 @@
-const btns = document.querySelectorAll('#To-Do-list .delete')
+const list = document.querySelector('#To-Do-list .remove-dot')
+const addForm = document.forms['add-boks']
 
-btns.forEach(element => {
-    element.addEventListener('click', (e)=> {
-        var li = e.target.parentElement
-        li.parentNode.removeChild(li)
-    })
-});
+
+// deleting books from the inventory
+list.addEventListener('click', (e)=> {
+    e.preventDefault()
+
+    if(e.target.className = 'delete') {
+        const li = e.target.parentElement
+        li.parentElement.removeChild(li)
+    }
+})
+
+
